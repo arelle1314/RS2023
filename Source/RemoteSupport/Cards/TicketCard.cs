@@ -82,7 +82,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
                 },
                 new AdaptiveTextBlock()
                 {
-                    Text = localizer.GetString("EndUserNotificationText"),
+                    Text = localizer.GetString("TellUsAboutProblemText"),
                     Wrap = true,
                     Spacing = AdaptiveSpacing.Small,
                 },
