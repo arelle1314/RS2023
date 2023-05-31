@@ -474,7 +474,7 @@
     <comment>Text to show for button action.</comment>
   </data>
   <data name="TellUsAboutProblemText" xml:space="preserve">
-    <value>To serve you better, we have moved to Digital Service Desk On HIP and MyWorld on 1 Jun 2023. Simply open your HIP App or go to MyWorld, select "Digital Service Desk" to try it out!</value>
+    <value>To serve you better, we have moved to Digital Service Desk On HIP and MyWorld on 1 Jun 2023. &lt;br/&gt; &lt;br/&gt; Simply open your HIP App or go to MyWorld, select "Digital Service Desk" to try it out!</value>
     <comment>Text to show in card.</comment>
   </data>
   <data name="TitlePlaceholderText" xml:space="preserve">
