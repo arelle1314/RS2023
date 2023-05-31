@@ -88,7 +88,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
                 },
             });
 
-            dynamicElements.AddRange(ticketAdditionalFields);
+            /* dynamicElements.AddRange(ticketAdditionalFields); */
 
             AdaptiveCard ticketDetailsPersonalChatCard = new AdaptiveCard(Constants.AdaptiveCardVersion)
             {
