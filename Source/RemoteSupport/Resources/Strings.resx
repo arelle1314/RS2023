@@ -474,7 +474,7 @@
     <comment>Text to show for button action.</comment>
   </data>
   <data name="TellUsAboutProblemText" xml:space="preserve">
-    <value>To serve you better, we have moved to Digital Service Desk on HIP and MyWorld on 1 Jun 2023. <br/>Simply open your HIP App or go to MyWorld, select <b><a href="https://myworld.ocbc.com:8843/web/sg/myworld/#/myportal/digitalservicedesk">"Digital Service Desk" </a> </b> to try it out!</value>
+    <value>To serve you better, we have moved to Digital Service Desk on HIP and MyWorld on 1 Jun 2023. <br/>Simply open your HIP App or go to MyWorld, select["Digital Service Desk"](https://myworld.ocbc.com:8843/web/sg/myworld/#/myportal/digitalservicedesk) to try it out!</value>
     <comment>Text to show in card.</comment>
   </data>
   <data name="TitlePlaceholderText" xml:space="preserve">
