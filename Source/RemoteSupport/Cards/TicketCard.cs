@@ -86,6 +86,12 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
                     Wrap = true,
                     Spacing = AdaptiveSpacing.Small,
                 },
+                new AdaptiveTextBlock()
+                {
+                    Text = localizer.GetString("TellUsAboutProblemText1"),
+                    Wrap = true,
+                    Spacing = AdaptiveSpacing.Small,
+                },
                 /*new AdaptiveTextBlock()
                 {
                     Text = localizer.GetString("CategoryTypeText"),
