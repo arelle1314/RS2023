@@ -86,7 +86,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
                     Wrap = true,
                     Spacing = AdaptiveSpacing.Small,
                 },
-                new AdaptiveTextBlock()
+                /*new AdaptiveTextBlock()
                 {
                     Text = localizer.GetString("CategoryTypeText"),
                     Spacing = AdaptiveSpacing.Medium,
@@ -172,7 +172,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
                     Text = localizer.GetString("TitleDisplayText"),
                     Wrap = true,
                     Spacing = AdaptiveSpacing.Medium,
-                },
+                },*/
             });
 
             dynamicElements.AddRange(ticketAdditionalFields);
@@ -180,7 +180,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
             AdaptiveCard ticketDetailsPersonalChatCard = new AdaptiveCard(Constants.AdaptiveCardVersion)
             {
                 Body = dynamicElements,
-                Actions = new List<AdaptiveAction>
+                /*Actions = new List<AdaptiveAction>
                 {
                     new AdaptiveSubmitAction
                     {
@@ -197,7 +197,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
                             TeamId = cardConfiguration?.TeamId,
                         },
                     },
-                },
+                },*/
             };
             return new Attachment
             {
