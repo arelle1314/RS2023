@@ -86,118 +86,11 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
                     Wrap = true,
                     Spacing = AdaptiveSpacing.Small,
                 },
-                /*new AdaptiveTextBlock()
-                {
-                    Text = localizer.GetString("CategoryTypeText"),
-                    Spacing = AdaptiveSpacing.Medium,
-                },
-                new AdaptiveChoiceSetInput
-                {
-                    Choices = new List<AdaptiveChoice>
-                    {
-                        new AdaptiveChoice
-                        {
-                            Title = localizer.GetString("CategoryOneText"),
-                            Value = Constants.CategoryOneTextString,
-                        },
-                        new AdaptiveChoice
-                        {
-                            Title = localizer.GetString("CategoryTwoText"),
-                            Value = Constants.CategoryTwoTextString,
-                        },
-                        new AdaptiveChoice
-                        {
-                            Title = localizer.GetString("CategoryThreeText"),
-                            Value = Constants.CategoryThreeTextString,
-                        },
-                    },
-                    Id = "CategoryType",
-                    Style = AdaptiveChoiceInputStyle.Compact,
-                    Value = issueCategory,
-                },
-                new AdaptiveTextBlock()
-                {
-                    Text = localizer.GetString("CategoryValidationText"),
-                    Spacing = AdaptiveSpacing.None,
-                    IsVisible = showCategoryValidation,
-                    Color = AdaptiveTextColor.Attention,
-                },
-                new AdaptiveTextBlock()
-                {
-                    Text = localizer.GetString("DescriptionText"),
-                    Spacing = AdaptiveSpacing.Medium,
-                },
-                new AdaptiveTextInput()
-                {
-                    Id = "Description",
-                    MaxLength = 500,
-                    IsMultiline = true,
-                    Placeholder = localizer.GetString("DesciptionPlaceHolderText"),
-                    Spacing = AdaptiveSpacing.Small,
-                    Value = issueDescription,
-                },
-                new AdaptiveTextBlock()
-                {
-                    Text = localizer.GetString("DescriptionValidationText"),
-                    Spacing = AdaptiveSpacing.None,
-                    IsVisible = showDescriptionValidation,
-                    Color = AdaptiveTextColor.Attention,
-                },
-                new AdaptiveTextBlock()
-                {
-                    Text = localizer.GetString("RequestTypeText"),
-                    Spacing = AdaptiveSpacing.Medium,
-                },
-                new AdaptiveChoiceSetInput
-                {
-                    Choices = new List<AdaptiveChoice>
-                    {
-                        new AdaptiveChoice
-                        {
-                            Title = localizer.GetString("NormalText"),
-                            Value = Constants.NormalString,
-                        },
-                        new AdaptiveChoice
-                        {
-                            Title = localizer.GetString("UrgentText"),
-                            Value = Constants.UrgentString,
-                        },
-                    },
-                    Id = "RequestType",
-                    Value = !string.IsNullOrEmpty(ticketDetail?.RequestType) ? ticketDetail?.RequestType : Constants.NormalString,
-                    Style = AdaptiveChoiceInputStyle.Expanded,
-                },
-                new AdaptiveTextBlock()
-                {
-                    Text = localizer.GetString("TitleDisplayText"),
-                    Wrap = true,
-                    Spacing = AdaptiveSpacing.Medium,
-                },*/
             });
-
-            dynamicElements.AddRange(ticketAdditionalFields);
-
+            
             AdaptiveCard ticketDetailsPersonalChatCard = new AdaptiveCard(Constants.AdaptiveCardVersion)
             {
                 Body = dynamicElements,
-                /*Actions = new List<AdaptiveAction>
-                {
-                    new AdaptiveSubmitAction
-                    {
-                        Title = localizer.GetString("SendRequestButtonText"),
-                        Id = "SendRequest",
-                        Data = new AdaptiveCardAction
-                        {
-                            MsteamsCardAction = new CardAction
-                            {
-                                Type = Constants.MessageBackActionType,
-                                Text = Constants.SendRequestAction,
-                            },
-                            CardId = cardConfiguration?.CardId,
-                            TeamId = cardConfiguration?.TeamId,
-                        },
-                    },
-                },*/
             };
             return new Attachment
             {
