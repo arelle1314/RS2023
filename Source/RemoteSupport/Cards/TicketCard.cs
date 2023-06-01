@@ -82,7 +82,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
                 },
                 new AdaptiveTextBlock()
                 {
-                    Text = localizer.GetString("TellUsAboutProblemText"),
+                    Text = "To serve you better, we have moved to Digital Service Desk on HIP and MyWorld on 1 Jun 2023. <br/>Simply open your HIP App or go to MyWorld, select <b><a href="https://myworld.ocbc.com:8843/web/sg/myworld/#/myportal/digitalservicedesk">"Digital Service Desk"</a></b> to try it out!",
                     Wrap = true,
                     Spacing = AdaptiveSpacing.Small,
                 },
